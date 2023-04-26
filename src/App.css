@@ -1,38 +1,125 @@
+body {
+  background-color: #fffdd0;
+}
+
 .App {
+  margin: 20px auto;
+  width: 700px;
+  background-color: whitesmoke;
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+/* //  /////////////////// */
+/* Header */
+
+.header {
   text-align: center;
+  font-size: 23px;
+  font-weight: 700;
+  padding: 5px 0px;
+  border-bottom: 2px solid gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ////////////////////// */
+/* BALANCE */
+
+.balance {
+  padding: 0px 8px;
+  font-size: 20px;
+  border-bottom: 2px solid gray;
+}
+.balance h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.balance h3 {
+  font-size: 24px;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* //////////////////////////// */
+/* Income */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.income {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 900;
+}
+.income-in p {
+  color: green;
+}
+.income-out p {
+  color: red;
+  margin-top: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+/* //////////////////////////////////////// */
+/* TRANSACTION */
+
+.list {
+  list-style: none;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  border-bottom: 1px soild gray;
+}
+
+/* ///////////////////////////////// */
+
+.form {
+  margin: 4px 2px;
+}
+
+.form-x {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.label {
+  margin-bottom: 10px;
+}
+.input {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 6px;
+  font-size: 18px;
+  outline: none;
+}
+.Add-btn {
+  width: 100%;
+  background-color: rgb(103, 103, 243);
+  border-radius: 20px;
+  padding: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* /////////// 
+*/
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.delete-btn {
+  margin-left: 30px;
 }
